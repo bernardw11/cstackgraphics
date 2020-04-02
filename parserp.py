@@ -156,15 +156,8 @@ def parse_file( fname, edges, polygons, csystems, screen, color ):
                 t = make_rotY(theta)
             else:
                 t = make_rotZ(theta)
-            print(csystems[-1])
-            print(csystems[-2])
-
             matrix_mult(csystems[-1], t)
             csystems[-1] = t
-            print("csystems-1")
-            print(csystems[-1])
-            print("csystems-2")
-            print(csystems[-2])
 
 #        elif line == 'ident':
 #            ident(transform)
@@ -179,9 +172,7 @@ def parse_file( fname, edges, polygons, csystems, screen, color ):
         elif line == 'push':
 
             '''
-            SOMEONE EXPLAIN WHY A SHALLOW COPY WOULDN'T WORK HERE. THIS LITERALLY WORKS.
-            csystems.append(csystems[-1]) literally works. why does dw say it doesnt work?
-
+            after 1 hr i realized a shallow copy literally works. tf?
 
             last = []
             for x in range(len(csystems[-1])):
