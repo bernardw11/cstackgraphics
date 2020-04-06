@@ -1,67 +1,40 @@
-#BODY
 push
 move
 250 250 0
 rotate
-y -30
+y -15
 box
--100 125 50 200 250 100
-#HEAD
+-100 125 80 200 250 160
 push
 move
 0 175 0
-rotate
-y 90
 sphere
-0 0 0 50
+0 0 0 20
 pop
-#LEFT ARM
 push
 move
--100 125 0
+0 -150 0
+box
+-80 0 -10 20 50 20
 rotate
-x -45
+x -40
 box
--40 0 40 40 100 80
-#LEFT LOWER ARM
+60 0 -10 20 50 20
+pop
 push
 move
--20 -100 0
-box
--10 0 10 20 125 20
-pop
-pop
-#RIGHT ARM
+0 100 0
 push
-move
-100 125 0
 rotate
-x -45
+z 20
 box
-0 0 40 40 100 80
-#RIGHT LOWER ARM
+-200 0 10 50 10 20
+pop
 push
-move
-20 -100 0
 rotate
-x -20
+z -20
 box
--10 0 10 20 125 20
-pop
-pop
-#LEFT LEG
-push
-move
--100 -125 0
-box
-0 0 40 50 120 80
-pop
-#RIGHT LEG
-push
-move
-100 -125 0
-box
--50 0 40 50 120 80
+200 0 10 50 10 20
 display
 save
 robot.png
